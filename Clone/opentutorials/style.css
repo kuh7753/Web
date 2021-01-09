@@ -1,3 +1,11 @@
+body {
+  margin: 0;
+  font-family: NanumGothic, sans-serif;
+  font-size: .75em;
+  color: #666;
+  line-height: 1;
+}
+
 p {
   text-align: center;
 }
@@ -21,6 +29,31 @@ li {
 
 div {
   display: block;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins,
+kbd, q, s, samp, small. strike, strong, sub, ol, ul, li, label, table, menu, nav, section, article, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+p.title a {
+  font-size: 2.4em;
+  color: #fff;
+}
+
+p.subtitle small {
+  color: #a3bfdb;
+  font-size: 1.1em;
+  padding: 0 10px;
 }
 
 #whole_wrapper {
@@ -56,7 +89,7 @@ div {
 }
 
 #left_nav #to_home a {
-  color : #ccc;
+  color: #ccc;
   text-indent: inherit;
   width: inherit;
   height: 20px;
@@ -90,4 +123,26 @@ div {
   line-height: 35px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+#whole_wrapper>.head {
+  background-color: #4d6c8b;
+}
+
+#whole_wrapper>.head nav#main_menu>div.wrapper>ul {
+  padding: 1.2em;
+  text-align: center;
+  margin: 0;
+}
+
+.wrapper li {
+  color: #ddd;
+  font-size: 1.2em;
+  padding: 10px 15px;
+}
+
+.sub_nav>li {
+  display: inline-block;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
 }
