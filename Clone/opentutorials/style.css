@@ -1,3 +1,12 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, ol, ul, li, label, table, menu, nav, section, article, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
 body {
   margin: 0;
   font-family: NanumGothic, sans-serif;
@@ -35,16 +44,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins,
-kbd, q, s, samp, small. strike, strong, sub, ol, ul, li, label, table, menu, nav, section, article, summary {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
 p.title a {
   font-size: 2.4em;
   color: #fff;
@@ -56,6 +55,13 @@ p.subtitle small {
   padding: 0 10px;
 }
 
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+p.subtitle {
+  padding : 8px 0;
+}
 #whole_wrapper {
   position: relative;
   margin: 0;
@@ -97,7 +103,12 @@ p.subtitle small {
   font-family: verdana !important;
 }
 
+#left_nav #to_home a span {
+  color: #2ecc71;
+}
+
 #right_nav {
+  padding-top: 4px;
   position: absolute;
   right: 14px;
   top: 0;
@@ -132,17 +143,36 @@ p.subtitle small {
 #whole_wrapper>.head nav#main_menu>div.wrapper>ul {
   padding: 1.2em;
   text-align: center;
-  margin: 0;
 }
 
 .wrapper li {
   color: #ddd;
   font-size: 1.2em;
-  padding: 10px 15px;
+  border-left: 1px solid #666;
 }
 
 .sub_nav>li {
   display: inline-block;
-  padding-right: 0.5em;
-  padding-left: 0.5em;
+  padding : 10px 15px;
+  z-index : 12;
+  position: relative;
+}
+
+#breadcrumb {
+  background-color: #eee;
+  border-bottom: 1px solid #ddd;
+}
+
+#breadcrumb>.wrapper {
+  width: 980px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+  position: relative;
+  vertical-align: middle;
+}
+
+#breadcrumb_line {
+  padding-left: 15px;
+  color: #999;
 }
